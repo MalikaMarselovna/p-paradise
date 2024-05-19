@@ -1,0 +1,44 @@
+header{
+  padding: 15px 0;
+}
+.Head{
+  align-items: center;
+  position: relative;
+  padding-right: 35px;
+}
+.Buttons {
+  margin-left: 10px;
+}
+.Cart_ic{
+  width: 34px;
+  height: 34px;
+  display: block;
+  background: url(../../img/cart-ic.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-left: 20px;
+}
+.Cart_ic span{
+  position: absolute;
+  line-height: 15px;
+  width: 20px;
+  background: #f92e9e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 100%;
+  border: #fff 2px solid;
+}
+.Favorite_ic{
+  width: 34px;
+  height: 34px;
+  display: block;
+  background: url(../../img/ifavorite.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-left: 20px;
+}
