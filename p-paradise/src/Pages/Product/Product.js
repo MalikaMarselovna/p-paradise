@@ -15,15 +15,32 @@ export default function Product() {
   }
 
   return (
-    <div className="Product">
+    <div className="flex justify-center mb-5 " >
       <div>
-        <img src={product.picture} alt={product.name} />
+        <img src={product.picture} alt={product.name} className="w-[470px] h-[600px] rounded-lg shadow-lg hover:scale-[1.04] easy-in duration-300"  />
       </div>
-      <div>
-        <h1>{product.name}</h1>
-        <p><strong>Price:</strong> {product.price}$</p>
-        <p><strong>Description: </strong>{product.description}</p>
-        <AddToCart product={product} />
+      <div className="ml-10 flex-[1.3] flex items-start justify-items-start flex-col mt-10 mb-10">
+        <h1 className="title text-[40px] text-[#f92e9e] ">{product.name}</h1>
+        <p className="mt-7 text-3xl "><strong className="text-[#16ffbd]">Price:</strong> {product.price}$</p>
+        <p className="pr-[4rem] text-justify  mt-4"><strong className="text-[#16ffbd]">Description: </strong>{product.description}</p>
+        <p className="pr-[4rem] text-justify mb-7  mt-4" ><strong className="text-[#16ffbd]">Color: </strong>{product.color}</p>
+        <div className="flex text-2xl mt-7">
+                Colors:
+                <div className="bg-pink-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#f92e9e]"></div>
+                <div className="bg-sky-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#f92e9e]"></div>
+                <div className="bg-white-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#f92e9e]"></div>
+                <div className="bg-green-600 w-[2rem] h-[2rem] rounded-full border-2 p-[10px] cursor-pointer ml-5 hover:border-[#f92e9e]"></div>
+            </div>
+            <div className="mt-7 text-2xl">
+                Size:
+                <select className="ml-5 border-2 border-[#f92e9e] rounded-md outline-none w-[150px]">
+                    <option selected disablet>Select</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+        <AddToCart product={product}/>
       </div>
     </div>
   )
