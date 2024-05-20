@@ -2,6 +2,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material';
 import React, { useState } from 'react';
 import { ApiSlides } from '../apiFolder/SliderApi';
 import './Slider.css';
+import { Link } from 'react-router-dom';
 
 function Slider() {
   const [slides] = useState(ApiSlides);
@@ -34,7 +35,7 @@ function Slider() {
               <div className="des flex flex-col flex-1 place-items-start justify-center ml-11">
                 <h2 className="text-[55px] mr-[10px]"> {slide.content.h2} </h2>
                 <p className="text-[30px] mb-[20px]">{slide.content.p}</p>
-                <button className="btn">Shop Now</button>
+                <Link to="/" className="btn">Shop Now</Link>
               </div>
             </div>
           </div>

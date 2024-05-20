@@ -15,12 +15,10 @@ export function AddToCart({ product }) {
   }
 
   return (
-    <div className="AddToCart">
-      <button className="btn" onClick={onAddToCartClick}>
-        Add To Cart
-        
+    <div className="AddToCart mt-[-15px]">
+      <button className="Cart_ic" onClick={onAddToCartClick}>
       </button>
-      {cart[product.id] ? cart[product.id] : 0}
+    <b className="text-white absolute mt-[-25px] ml-[5px] text-x">  {cart[product.id] ? cart[product.id] : 0}</b>
     </div>
   );
 }

@@ -5,16 +5,28 @@ import "./OrderList.css";
 export default function OrderList() {
   const { orders, products } = useContext(AppContext);
 
-  if (!orders.length || !products.length) {
-    return "No orders found.";
+  if (!orders || orders.length === 0) {
+    return <div>No orders found.</div>;
+  }
+
+  if (!products || products.length === 0) {
+    return <div>No products found.</div>;
   }
 
   const output = orders.map(order => {
+    if (!order.cart) {
+      return <div key={order.id}>Invalid order data.</div>;
+    }
+
     const cartOutput = Object.keys(order.cart).map(productId => {
       const product = products.find(product => product.id === productId);
 
       if (!product) {
-        return "Product not found";
+        return (
+          <div className="product" key={productId}>
+            Product not found
+          </div>
+        );
       }
 
       return (
@@ -27,7 +39,7 @@ export default function OrderList() {
           </li>
         </div>
       );
-    })
+    });
 
     return (
       <ul className="Order" key={order.id}>
@@ -42,7 +54,7 @@ export default function OrderList() {
         <hr />
       </ul>
     );
-  })
+  });
 
   return (
     <div className="OrderList">

@@ -8,8 +8,9 @@ import DeleteProduct from "../DeleteProduct/DeleteProduct";
 
 export default function ProductList({ category }) {
   const { products } = useContext(AppContext);
-  const output = products.filter(product => product.category === category.id)
-    .map(product => (
+  const output = products
+    .filter((product) => product.category === category.id)
+    .map((product) => (
       <div key={product.id} className="product">
         <Link to={"/products/" + product.slug}>
           <img src={product.picture} alt={product.name} />
@@ -21,9 +22,10 @@ export default function ProductList({ category }) {
 
         <br />
 
-        <div className="actions">
-
-          <span>${product.price}</span>
+        <div className="actions flex items-center ">
+          <span>
+            <b>${product.price}</b>
+          </span>
           <AddToCart product={product} />
         </div>
         <DeleteProduct product={product} />
@@ -36,5 +38,5 @@ export default function ProductList({ category }) {
 
       <AddProduct category={category} />
     </div>
-  )
+  );
 }
