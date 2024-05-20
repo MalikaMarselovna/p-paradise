@@ -12,6 +12,7 @@ import Product from "./Pages/Product/Product";
 import { Cart } from "./Pages/Cart/Cart";
 import ThankYou from "./Pages/ThankYou/ThankYou";
 import Orders from "./Pages/Orders/Orders";
+import CategoryPages from "./Pages/CategoryPages";
 
 export const AppContext = createContext({
   categories: [],
@@ -66,6 +67,7 @@ function App() {
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/orders" element={<Orders />} />
+            <Route path="/categorypages" element={<CategoryPages />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

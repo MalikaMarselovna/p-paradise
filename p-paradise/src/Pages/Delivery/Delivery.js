@@ -4,9 +4,10 @@ import video from "../../img/delivery.mp4";
 function Delivery() {
   return (
     <section className="Delivery">
+      <h1 className="text-5xl font-bold mb-4 flex justify-center text-[#f92e9e]"> Worldwide Shipping</h1>
       <div className="Delivery flex justify-between">
         <div className="container">
-          <div className="Delivery_video">
+          <div className="Delivery_video mt-15">
             <video width="100%" height="auto" controls autoPlay muted>
               <source src={video} type="video/mp4" />
             </video>

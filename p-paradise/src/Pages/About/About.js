@@ -3,7 +3,7 @@ import "./About.css";
 function About() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold mb-4 flex justify-center text-[#f92e9e]">
+      <h1 className="text-5xl font-bold mb-4 flex justify-center text-[#f92e9e]">
         Welcome to Plush Paradise!
       </h1>
       <div className="p-5 flex flex-col items-center justify-center">

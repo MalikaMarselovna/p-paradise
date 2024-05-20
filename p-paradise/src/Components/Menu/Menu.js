@@ -12,7 +12,7 @@ function Menu() {
           <Link to="/about">About Us</Link>
         </li>
         <li>
-          <Link to="/category">Our Products</Link>
+          <Link to="/categorypages">Our Products</Link>
         </li>
         <li>
           <Link to="/delivery">Delivery</Link>

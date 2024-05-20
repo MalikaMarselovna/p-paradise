@@ -27,7 +27,7 @@ export function Cart() {
 
   return (
     <div className="Cart" >
-      <h1 className="title text-[40px] text-[#f92e9e] " > Your Cart</h1>
+      <h1 className="text-5xl font-bold mb-4 flex justify-center text-[#f92e9e]"> Your Cart</h1>
         <div className="flex items-center justify-between mt-4">
           <Link to="/" className="btn bg-white text-[#f92e9e] border-2 border-[#f92e9e] hover:bg-white hover:text-[#16ffbd] hover:border-[#16ffbd]">
             Continue Shopping

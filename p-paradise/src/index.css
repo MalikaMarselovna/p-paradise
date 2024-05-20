@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
 html,body{
 	height: 100%;
 }
@@ -72,13 +72,13 @@ body{
 	margin: 0 auto;
 	padding: 0 15px;
 }
-.dn{
+/* .dn{
 	display: none;
-}
+} */
 section{
 	padding: 0 0 80px;
 }
-main{
+/* main{
 	padding: 20px 0;
 }
 .color{
@@ -107,7 +107,7 @@ main{
 .img_wrap{
 	overflow: hidden;
 	border-radius: 5px;
-} */
+} */ */
 
 /* index.css */
 

@@ -11,7 +11,7 @@ function Announce() {
     return (
         <div className={announceStyle}>
             <h2> Hurry up it's 40% off now</h2>
-            <Close className='cursor-pointer' onClick={handleClose} />
+            <Close className='cursor-pointer ml-6' onClick={handleClose} />
         </div>
     )
 }
