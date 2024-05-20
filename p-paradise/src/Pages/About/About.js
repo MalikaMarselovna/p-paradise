@@ -27,17 +27,17 @@ function About() {
           className="w-[100%] h-[100%] overflow-hidden rounded-md ml-2"
         />
         <img
-          src="https://i.pinimg.com/236x/71/59/7f/71597fa7d2a008f4a7820c5d31e36f5d.jpg"
+          src="https://i.pinimg.com/236x/16/69/15/1669156e6f3c361327393e0c2fb2236f.jpg"
           alt=""
           className="w-[100%] h-[100%] overflow-hidden rounded-md ml-2"
         />
         <img
-          src="https://i.pinimg.com/236x/71/59/7f/71597fa7d2a008f4a7820c5d31e36f5d.jpg"
+          src="https://i.pinimg.com/236x/6d/a4/04/6da404cc126a997fa6f9236f5f534b9f.jpg"
           alt=""
           className="w-[100%] h-[100%] overflow-hidden rounded-md ml-2"
         />
         <img
-          src="https://i.pinimg.com/236x/71/59/7f/71597fa7d2a008f4a7820c5d31e36f5d.jpg"
+          src="https://i.pinimg.com/564x/5b/a4/8d/5ba48d3701d0294c18446fe321bfe329.jpg"
           alt=""
           className="w-[100%] h-[100%] overflow-hidden rounded-md ml-2"
         />

@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import CartList from "../../Components/CartList/CartList";
 import OrderForm from "../../Components/OrderForm/OrderForm";
 import { AppContext } from "../../App";
+import { Link } from "react-router-dom";
 
 export function Cart() {
   const [modalActive, setModalActive] = useState(false);
@@ -10,7 +11,7 @@ export function Cart() {
   if (Object.keys(cart).length === 0) {
     return (
     <div className="Cart" >
-      <h1>Cart</h1>
+      <h1 >Cart</h1>
       <CartList />
       <OrderForm active={modalActive} setActive={setModalActive} />
     </div>
@@ -26,7 +27,12 @@ export function Cart() {
 
   return (
     <div className="Cart" >
-      <h1>Cart</h1>
+      <h1 className="title text-[40px] text-[#f92e9e] " > Your Cart</h1>
+        <div className="flex items-center justify-between mt-4">
+          <Link to="/" className="btn bg-white text-[#f92e9e] border-2 border-[#f92e9e] hover:bg-white hover:text-[#16ffbd] hover:border-[#16ffbd]">
+            Continue Shopping
+          </Link>
+          </div>
       <CartList />
       <button className="order" onClick={() => setModalActive(true)}>Order</button>
       <OrderForm active={modalActive} setActive={setModalActive} />
