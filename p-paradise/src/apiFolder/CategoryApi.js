@@ -12,10 +12,10 @@ export const ApiCategories = [
         title: 'FOR BABIES',
         src: "https://i.pinimg.com/564x/ba/c5/0f/bac50fb818024514356e2ac942ae57a0.jpg"
     },
-    // {
-    //     title: 'CARTOON CHARACTERS',
-    //     src: "https://i.pinimg.com/564x/c0/d7/7b/c0d77bcf370d188c6d354d014f841276.jpg"
-    // },
+    {
+        title: 'CARTOON',
+        src: "https://i.pinimg.com/564x/c2/ff/cb/c2ffcb7e0039d16d250bd73241500e23.jpg"
+    },
     // {
     //     title: 'PAIRS',
     //     src: "https://i.pinimg.com/564x/9c/c2/40/9cc2403f0470866a875b0f0ee231fe11.jpg"
