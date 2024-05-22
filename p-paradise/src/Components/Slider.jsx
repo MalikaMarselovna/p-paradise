@@ -19,7 +19,7 @@ function Slider() {
   };
 
   return (
-    <div className="parentDiv h-[540px] bg-white flex items-center justify-between">
+    <div className="parentDiv h-[90vh] bg-white flex items-center justify-between mb-10">
       {/* Left arrow */}
       <div className={arrowStyle} onClick={prevSlide}>
         <ArrowLeftOutlined style={{ fontSize: '50px' }} />

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
 html,body{
 	height: 100%;
 }
@@ -31,7 +31,7 @@ button,
 label{
 	cursor: pointer;
 }
-input,
+ /* input,
 button,
 textarea{
 	background: none;
@@ -42,7 +42,7 @@ textarea{
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: inherit;
-}
+}   */
 input[type="radio"],
 input[type="checkbox"]{
 	display: none;
@@ -72,42 +72,21 @@ body{
 	margin: 0 auto;
 	padding: 0 15px;
 }
-/* .dn{
+.dn{
 	display: none;
-} */
-section{
-	padding: 0 0 80px;
 }
-/* main{
-	padding: 20px 0;
-}
+
 .color{
 	color: #BE963F;
 }
-.dib{
+ .dib{
 	display: inline-block;
 }
-.hover{
-	transition: 0.3s;
-}
-.hover:hover{
-	color: #BE963F;
-}
-.link{
-	transition: 0.3s;
-}
-.link:hover{
-	box-shadow: 0px 6px 5px 2px #836A36;
-}
-.flex{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
+
 .img_wrap{
 	overflow: hidden;
 	border-radius: 5px;
-} */ */
+}  
 
 /* index.css */
 

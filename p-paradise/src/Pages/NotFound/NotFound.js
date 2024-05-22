@@ -3,9 +3,9 @@ import './NotFound.css';
 
 function NotFound() {
   return (
-    <div className="container">
+    <div >
       <div className='NotFound text-[#f92e9e]'>404</div>
-      <p className="NotFound_txt">
+      <p className="NotFound_txt text-[#f92e9e]">
         Oops, go to 
         <Link to="/">Home</Link>
       </p>

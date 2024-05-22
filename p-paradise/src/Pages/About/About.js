@@ -2,7 +2,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className=" ">
       <h1 className="text-5xl font-bold mb-4 flex justify-center text-[#f92e9e]">
         Welcome to Plush Paradise!
       </h1>

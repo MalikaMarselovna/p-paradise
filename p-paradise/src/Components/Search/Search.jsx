@@ -1,6 +1,6 @@
 import { useEffect, useContext, useState, useRef } from "react";
 import { AppContext } from "../../App";
-import ProductList from "../ProductList/ProductList";
+import ProductItem from "../../Pages/Product/Product";
 import "./Search.css";
 
 export default function Search() {
@@ -58,7 +58,7 @@ export default function Search() {
       )}
       <div className="SearchResults">
         {searchResults.map((product) => (
-          <ProductList
+          <ProductItem
             key={product.id}
             product={product}
             onLinkClick={handleLinkClick}

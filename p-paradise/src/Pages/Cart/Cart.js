@@ -26,15 +26,15 @@ export function Cart() {
   }
 
   return (
-    <div className="Cart" >
+    <div className="Cart p-10" >
       <h1 className="text-5xl font-bold mb-4 flex justify-center text-[#f92e9e]"> Your Cart</h1>
         <div className="flex items-center justify-between mt-4">
-          <Link to="/" className="btn bg-white text-[#f92e9e] border-2 border-[#f92e9e] hover:bg-white hover:text-[#16ffbd] hover:border-[#16ffbd]">
+          <Link to="/" className="btn bg-white text-[#f92e9e] border-2 border-[#f92e9e] hover:bg-white hover:text-[#16ffbd] hover:border-[#16ffbd] mb-10">
             Continue Shopping
           </Link>
           </div>
       <CartList />
-      <button className="order" onClick={() => setModalActive(true)}>Order</button>
+      <button className="order btn mt-20 text-center" onClick={() => setModalActive(true)}>Order</button>
       <OrderForm active={modalActive} setActive={setModalActive} />
     </div>
   )
